@@ -1,8 +1,5 @@
 # 4.Execution_of_NetworkCommands
-```
-NAME:RAGUNATH R
-REG NO:212222240081
-```
+
 ## AIM :
 Use of Network commands in Real Time environment
 ## Software : 
