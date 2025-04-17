@@ -37,7 +37,7 @@ This commands includes
 import socket 
 from pythonping import ping 
 s=socket.socket() 
-s.bind(('localhost'8000)) 
+s.bind(('localhost',8000)) 
 s.listen(5) 
 c,addr=s.accept() 
 while True: 
@@ -46,6 +46,7 @@ while True:
         c.send(str(ping(hostname, verbose=False)).encode()) 
     except KeyError: 
         c.send("Not Found".encode())
+
 ```
 ### SERVER
 ```
@@ -56,6 +57,7 @@ while True:
     ip=input("Enter the website you want to ping ") 
     s.send(ip.encode()) 
     print(s.recv(1024).decode())
+
 ```
 ### TRANCEROUTE COMMAND
 ```
@@ -65,13 +67,10 @@ result, unans = traceroute(target,maxttl=32)
 print(result,unans)
 ```
 ## Output
-### PING COMMAND
-### CLIENT
-![image](https://github.com/23004205/4.Execution_of_NetworkCommends/assets/138971114/d4012c35-9f3a-48a4-8338-01a03a0bf810)
-### SERVER
-![image](https://github.com/23004205/4.Execution_of_NetworkCommends/assets/138971114/41a703f5-1cd5-42fe-a821-d1533f4820ef)
-### TRANCEROUTE COMMAND
-![image](https://github.com/23004205/4.Execution_of_NetworkCommends/assets/138971114/ed1e8d7d-22d4-400f-b102-fefe2c182e45)
+![image](https://github.com/user-attachments/assets/15137234-6600-4a19-91ed-c20e7636a7aa)
+
+![image](https://github.com/user-attachments/assets/521539b5-04c1-48e4-8c11-f62f5168816d)
+
 
 ## Result
 Thus Execution of Network commands Performed 
